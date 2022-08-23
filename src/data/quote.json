@@ -1,0 +1,115 @@
+{
+  "requestId": "5198619b-9d14-4da1-9665-d7c79615e818",
+  "resultType": "OK",
+  "route": {
+    "outputAmount": "114052398906767118",
+    "swapper": {
+      "id": "CBridge Aggregator",
+      "title": "cBridge v2.0",
+      "logo": "https://api.rango.exchange/swappers/cbridge.png"
+    },
+    "fee": [
+      {
+        "token": {
+          "blockchain": "FANTOM",
+          "symbol": "FTM",
+          "address": null,
+          "decimals": 18,
+          "image": "https://api.rango.exchange/i/mZqhCJ"
+        },
+        "expenseType": "FROM_SOURCE_WALLET",
+        "amount": "5255535511471270",
+        "name": "Network Fee"
+      },
+      {
+        "token": {
+          "blockchain": "FANTOM",
+          "symbol": "FTM",
+          "address": null,
+          "decimals": 18,
+          "image": "https://api.rango.exchange/i/mZqhCJ"
+        },
+        "expenseType": "FROM_SOURCE_WALLET",
+        "amount": "318600000000000000",
+        "name": "Swapper Fee"
+      }
+    ],
+    "amountRestriction": {
+      "min": "24383040184071079135",
+      "max": "4632777634973505035667591",
+      "type": "EXCLUSIVE"
+    },
+    "estimatedTimeInSeconds": 480,
+    "path": [
+      {
+        "swapper": {
+          "id": "SpookySwap",
+          "title": "Spooky Swap",
+          "logo": "https://api.rango.exchange/swappers/spooky-swap.png"
+        },
+        "swapperType": "DEX",
+        "from": {
+          "blockchain": "FANTOM",
+          "symbol": "FTM",
+          "address": null,
+          "decimals": 18,
+          "image": "https://api.rango.exchange/i/mZqhCJ"
+        },
+        "to": {
+          "blockchain": "FANTOM",
+          "symbol": "ETH",
+          "address": "0x74b23882a30290451a17c44f4f05243b6b58c76d",
+          "decimals": 18,
+          "image": "https://assets.spookyswap.finance/tokens/wETH.png"
+        },
+        "expectedOutput": "20436763222297642"
+      },
+      {
+        "swapper": {
+          "id": "cBridge v2.0",
+          "title": "cBridge v2.0",
+          "logo": "https://api.rango.exchange/swappers/cbridge.png"
+        },
+        "swapperType": "BRIDGE",
+        "from": {
+          "blockchain": "FANTOM",
+          "symbol": "ETH",
+          "address": "0x74b23882a30290451a17c44f4f05243b6b58c76d",
+          "decimals": 18,
+          "image": "https://api.rango.exchange/i/jm5yW6"
+        },
+        "to": {
+          "blockchain": "BSC",
+          "symbol": "ETH",
+          "address": "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
+          "decimals": 18,
+          "image": "https://api.rango.exchange/i/jm5yW6"
+        },
+        "expectedOutput": "20003671036585088"
+      },
+      {
+        "swapper": {
+          "id": "PancakeSwapBsc",
+          "title": "Pancake",
+          "logo": "https://api.rango.exchange/swappers/pancake-swap.png"
+        },
+        "swapperType": "DEX",
+        "from": {
+          "blockchain": "BSC",
+          "symbol": "ETH",
+          "address": "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
+          "decimals": 18,
+          "image": "https://tokens.pancakeswap.finance/images/0x2170Ed0880ac9A755fd29B2688956BD959F933F8.png"
+        },
+        "to": {
+          "blockchain": "BSC",
+          "symbol": "BNB",
+          "address": null,
+          "decimals": 18,
+          "image": "https://api.rango.exchange/i/B4ULZJ"
+        },
+        "expectedOutput": "114052398906767118"
+      }
+    ]
+  }
+}

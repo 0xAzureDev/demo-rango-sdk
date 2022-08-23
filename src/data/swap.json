@@ -1,0 +1,143 @@
+{
+  "requestId": "f91a6d8c-4ac2-4118-92d0-579c49bf52c2",
+  "resultType": "OK",
+  "route": {
+    "outputAmount": "114052398906767118",
+    "swapper": {
+      "id": "CBridge Aggregator",
+      "title": "cBridge v2.0",
+      "logo": "https://api.rango.exchange/swappers/cbridge.png"
+    },
+    "fee": [
+      {
+        "token": {
+          "blockchain": "FANTOM",
+          "symbol": "FTM",
+          "address": null,
+          "decimals": 18,
+          "image": "https://api.rango.exchange/i/mZqhCJ"
+        },
+        "expenseType": "FROM_SOURCE_WALLET",
+        "amount": "5255535511471270",
+        "name": "Network Fee"
+      },
+      {
+        "token": {
+          "blockchain": "FANTOM",
+          "symbol": "FTM",
+          "address": null,
+          "decimals": 18,
+          "image": "https://api.rango.exchange/i/mZqhCJ"
+        },
+        "expenseType": "FROM_SOURCE_WALLET",
+        "amount": "318600000000000000",
+        "name": "Swapper Fee"
+      }
+    ],
+    "amountRestriction": {
+      "min": "24383040184071079135",
+      "max": "4632777634973505035667591",
+      "type": "EXCLUSIVE"
+    },
+    "estimatedTimeInSeconds": 480,
+    "path": [
+      {
+        "swapper": {
+          "id": "SpookySwap",
+          "title": "Spooky Swap",
+          "logo": "https://api.rango.exchange/swappers/spooky-swap.png"
+        },
+        "swapperType": "DEX",
+        "from": {
+          "blockchain": "FANTOM",
+          "symbol": "FTM",
+          "address": null,
+          "decimals": 18,
+          "image": "https://api.rango.exchange/i/mZqhCJ"
+        },
+        "to": {
+          "blockchain": "FANTOM",
+          "symbol": "ETH",
+          "address": "0x74b23882a30290451a17c44f4f05243b6b58c76d",
+          "decimals": 18,
+          "image": "https://assets.spookyswap.finance/tokens/wETH.png"
+        },
+        "expectedOutput": "20436763222297642"
+      },
+      {
+        "swapper": {
+          "id": "cBridge v2.0",
+          "title": "cBridge v2.0",
+          "logo": "https://api.rango.exchange/swappers/cbridge.png"
+        },
+        "swapperType": "BRIDGE",
+        "from": {
+          "blockchain": "FANTOM",
+          "symbol": "ETH",
+          "address": "0x74b23882a30290451a17c44f4f05243b6b58c76d",
+          "decimals": 18,
+          "image": "https://get.celer.app/cbridge-icons/ETH.png"
+        },
+        "to": {
+          "blockchain": "BSC",
+          "symbol": "ETH",
+          "address": "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
+          "decimals": 18,
+          "image": "https://get.celer.app/cbridge-icons/ETH.png"
+        },
+        "expectedOutput": "20003671036585088"
+      },
+      {
+        "swapper": {
+          "id": "PancakeSwapBsc",
+          "title": "Pancake",
+          "logo": "https://api.rango.exchange/swappers/pancake-swap.png"
+        },
+        "swapperType": "DEX",
+        "from": {
+          "blockchain": "BSC",
+          "symbol": "ETH",
+          "address": "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
+          "decimals": 18,
+          "image": "https://tokens.pancakeswap.finance/images/0x2170Ed0880ac9A755fd29B2688956BD959F933F8.png"
+        },
+        "to": {
+          "blockchain": "BSC",
+          "symbol": "BNB",
+          "address": null,
+          "decimals": 18,
+          "image": "https://api.rango.exchange/i/B4ULZJ"
+        },
+        "expectedOutput": "114052398906767118"
+      }
+    ]
+  },
+  "error": null,
+  "tx": {
+    "type": "EVM",
+    "blockChain": {
+      "name": "FANTOM",
+      "defaultDecimals": 18,
+      "addressPatterns": [
+        "^(0x)[0-9A-Fa-f]{40}$"
+      ],
+      "feeAssets": [
+        {
+          "blockchain": "FANTOM",
+          "symbol": "FTM",
+          "address": null
+        }
+      ],
+      "type": "EVM",
+      "chainId": "250"
+    },
+    "from": "0xeb2629a2734e272bcc07bda959863f316f4bd4cf",
+    "txTo": "0x2a7813412b8da8d18Ce56FE763B9eb264D8e28a8",
+    "approveTo": null,
+    "approveData": null,
+    "txData": "0x0b320d95000000000000000000000000000000000000000000000000000000000000000000000000000000000000000074b23882a30290451a17c44f4f05243b6b58c76d0000000000000000000000000000000000000000000000056b5cc95613cd0003000000000000000000000000000000000000000000000000006a94d74f42fffd0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001a000000000000000000000000069456b55e0868e7c4012d288ad6f92f89ed7697e0000000000000000000000000000000000000000000000000000000000000038000000000000000000000000000000000000000000000000000001825f3e9235000000000000000000000000000000000000000000000000000000000000799900000000000000000000000000000000000000000000000004dd15835ffbc01c000000000000000000000000000000000000000000000000000000000000034000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000020000000000000000000000000f491e7b69e4244ad4002bc14e878a34207e38c29000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000e47ff36ab500000000000000000000000000000000000000000000000000481a1bd2d50f4d00000000000000000000000000000000000000000000000000000000000000800000000000000000000000002a7813412b8da8d18ce56fe763b9eb264d8e28a80000000000000000000000000000000000000000000000000000000062e94e57000000000000000000000000000000000000000000000000000000000000000200000000000000000000000021be370d5312f44cb42ce377bc9b8a0cef1a4c8300000000000000000000000074b23882a30290451a17c44f4f05243b6b58c76d000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000038000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010ed43c718714eb63d5aa57b78b54704e256024e0000000000000000000000002170ed0880ac9a755fd29b2688956bd959f933f8000000000000000000000000bb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c000000000000000000000000000000000000000000000000019124c083648f7600000000000000000000000000000000000000000000000000000000000001c00000000000000000000000000000000000000000000000000000000062e951dc0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000eb2629a2734e272bcc07bda959863f316f4bd4cf000000000000000000000000eb2629a2734e272bcc07bda959863f316f4bd4cf00000000000000000000000000000000000000000000000000000000000002200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000002170ed0880ac9a755fd29b2688956bd959f933f8000000000000000000000000bb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c0000000000000000000000000000000000000000000000000000000000000000",
+    "value": "0x570a473b0c30bc01c",
+    "gasLimit": "0xc3500",
+    "gasPrice": "5922146039"
+  }
+}
